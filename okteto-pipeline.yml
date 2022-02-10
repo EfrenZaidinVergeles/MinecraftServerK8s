@@ -1,0 +1,5 @@
+icon: https://apps.okteto.com/movies/icon.png
+deploy:
+  - helm repo add itzg https://itzg.github.io/minecraft-server-charts/
+  - helm install itzg/minecraft --generate-name --set minecraftServer.eula=true
+devs:
